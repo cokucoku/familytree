@@ -198,3 +198,13 @@ body {
 .here .lan .po {
     width: 100%;
 }
+
+/*.spouses .node:first-child:before{*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    bottom: -22px;*/
+/*    left: 0px;*/
+/*    width:calc((var(--numSpouse) - 2) * 20px);*/
+/*    height: 1px;*/
+/*    background-color: var(--line);*/
+/*}*/
