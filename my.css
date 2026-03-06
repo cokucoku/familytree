@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --line: #666;
+    --fline: #DE6BA6;
+    --fbg: #F7C7DF;
+    --mline: #5f92bd;
+    --mbg: #AFD1ED;
+    --dark: #eee;
+    --bg:#FAF9F5
+}
+body {
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
+     overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background: var(--bg);
+
+}
+
+#app {
+    min-height: 100vh;
+
+}
+#capature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    width: 56px;
+    height: 56px;
+    background-color: var(--mline);
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.male {
+    background-color: var(--mbg);
+    border: 1px solid var(--mline);
+}
+
+.male i {
+    color: var(--mline);
+}
+
+.female {
+    background-color: var(--fbg);
+    border: 1px solid var(--fline);
+}
+
+.female i {
+    color: var(--fline);
+}
+
+.disabled {
+    border-color:#eee;
+    background: #fff;
+    pointer-events: none;
+}
+
+.disabled i, .disabled span {
+    opacity: .3;
+}
+
+
+.el-dialog {
+    width: 90% !important;
+    max-width: 500px;
+}
+
+.el-dialog__header {
+    background: var(--dark);
+    padding: 15px !important;
+}
+
+.el-date-editor.el-input, .el-date-editor.el-input__inner {
+    width: 100% !important;
+}
+
+.el-popover__reference-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.tree-container {
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.here {
+    display: flex;
+    flex-direction: column;
+    gap: 15px
+}
+
+.here .dos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px
+}
+
+.here .dos > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.here .po {
+    width: 13%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.here .po i {
+
+    font-size: inherit;
+}
+
+.here .po span {
+    font-size: 13px;
+    line-height: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #222;
+}
+
+.here .my {
+    width: 30%;
+    /*border: solid 1px var(--mline);*/
+    /*background: var(--mbg);*/
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.here .my i {
+    /*color: var(--mline);*/
+    font-size: inherit;
+}
+.here .my i.tx{
+    width: 95.652173913%;
+    padding-bottom: 95.652173913%;
+    position: relative;
+    margin-top: 2px;border-radius: 8px;
+    overflow: hidden;
+}
+.here .my i img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.here .my span {
+    font-size: 18px;
+    line-height: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #222;
+}
+
+.here .lan {
+    width: 13%;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.here .siblings {
+    gap: 15px;
+}
+
+.here .lan .po {
+    width: 100%;
+}
